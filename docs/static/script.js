@@ -78,7 +78,7 @@ function buildTable(data) {
 }
 
 async function loadData(){
-  return await (await fetch('/results/last.json')).json()
+  return await (await fetch('/browser-permissions-tool/results/last.json')).json()
 }
 
 async function loadPage(){
