@@ -21,3 +21,4 @@ Using the list of permission at `./code/permissions.js`, uses chromium to check 
 - [W3C Permissions Policy Features (not very updated)](https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md)
 - [W3C Permissions Registry (deprecated)](https://github.com/w3c/permissions-registry/)
 - [Feature Policy Playground by triblondon](https://github.com/triblondon/feature-policy-playground/tree/master)
+- [Web Platform Tests (WPT)](https://web-platform-tests.org/)
