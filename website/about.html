@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About This Project</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li> <a href="https://github.com/AlbertoFDR/browser-permissions-tool" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="github-icon" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.5 7.5 0 014 0c1.52-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        </li>
+      </ul>
+    </div>
+
+    <header>
+      <h1>About This Project</h1>
+      <p>
+      This tool is designed to evaluate browser features and determine whether they are powerful or restricted by policy. To achieve this, I created a simple prototype inspired by the concept of <a href="https://privacytests.org">privacytests.org</a>. This project is open-source, and the code is available for access (<a href="https://github.com/AlbertoFDR/browser-permissions-tool">Github code</a>). In essence, the tool evaluates each known permission listed in its codebase to determine whether it is powerful and/or controlled by policy. To check if a permission is powerful, the tool leverages the <code>navigator.permissions.query</code> function. For testing policy-controlled features, it utilizes the <code>Permissions-Policy header</code>.
+      
+      As noted, however, this header is currently not supported in Firefox or WebKit. That said, the lack of support for the header does not imply that these browsers fail to implement inheritance to iframes using the <code>allow</code> attribute.
+      </p>
+      <h1>W3C Standards</h1>
+      <ul>
+        <li><a href="https://www.w3.org/TR/permissions/">W3C Permissions Standard</a></li> 
+        <li><a href="https://www.w3.org/TR/permissions-policy/">W3C Permissions-Policy Standard</a> (formerly known as Feature Policy)</li> 
+      </ul>
+      <h1>References</h1>
+      <ul>
+        <li><a href="https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md">W3C Permissions-Policy features list</a></li> 
+        <li><a href="https://github.com/w3c/permissions-registry/">W3C Permissions registry (deprecated)</a></li> 
+        <li><a href="https://chromium.googlesource.com/chromium/src/+/refs/heads/main/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5">Permissions Policy in Chromium code</a></li> 
+        <li><a href="https://github.com/triblondon/feature-policy-playground/tree/master"> Feature-Policy Playground by triblondon</a></li> 
+      </ul>
+    </header>
+
+  </div>
+  <footer>
+    <p>Project by <a href="https://github.com/albertofdr" target="_blank">bubu</a>.</p>
+  </footer>
+</body>
+</html>
