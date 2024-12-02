@@ -10,6 +10,12 @@ function buildTable(data) {
   let firefox_version = data['firefox_version'];
   let webkit_version = data['webkit_version'];
   let permissions_data = data['result'];
+  let date = data['date'];
+
+  // Date
+  const date_element = document.getElementById('date');
+  date_element.textContent = date;
+
 
   // Clear existing content
   topHeaderRow.innerHTML = '';
