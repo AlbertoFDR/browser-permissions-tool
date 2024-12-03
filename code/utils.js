@@ -19,7 +19,7 @@ function getCurrentDate() {
 
 function saveResults(json){
   let date = getCurrentDate();
-  const folderPath = path.join(__dirname, '../website/results');
+  const folderPath = path.join(__dirname, '../docs/results');
   
   // last.json overwriting
   const lastPath = path.join(folderPath, 'last.json');
