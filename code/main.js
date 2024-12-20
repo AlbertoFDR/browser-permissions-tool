@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const { chromium, firefox, webkit } = require('playwright');
 const { PERMISSIONS } = require('./permissions.js');
 const { sleep, getCurrentDate, saveResults } = require('./utils.js');
@@ -8,7 +9,11 @@ const { sleep, getCurrentDate, saveResults } = require('./utils.js');
 const CHROME_TEST = true;
 const CHROMIUM_TEST = true;
 const FIREFOX_TEST = true;
+const BRAVE_TEST = true;
 const WEBKIT_TEST = true;
+
+const BRAVE_BIN = '/usr/bin/brave-browser';
+const URL_FOR_TESTING = 'https://albertofdr.github.io/browser-permissions-tool/index.html';
 
 
 async function get_versions(){
@@ -17,39 +22,40 @@ async function get_versions(){
   console.log('Playwright version:', playwrightVersion);
 
   // Launch the browsers to get their versions
+  const chromeBrowser = await chromium.launch({ channel: 'chrome' });
   const chromiumBrowser = await chromium.launch();
   const firefoxBrowser = await firefox.launch();
   const webkitBrowser = await webkit.launch();
 
+  const chromeVersion = await chromeBrowser.version();
   const chromiumVersion = await chromiumBrowser.version();
   const firefoxVersion = await firefoxBrowser.version();
   const webkitVersion = await webkitBrowser.version();
-
-  // Since Playwright uses Chromium to launch Chrome, we need to use specific browser names.
-  const chromeBrowser = await chromium.launch({ channel: 'chrome' });
-  const chromeVersion = await chromeBrowser.version();
+  // https://github.com/privacytests/privacytests.org/blob/9743fd23a5456b1038bfea8b5e1199afc13ba581/scripts/desktop.js#L238
+  const braveVersionOutput = execSync(`${BRAVE_BIN} --version`, { encoding: 'utf8' }); 
+  const braveVersion = braveVersionOutput.trim().replace(/^[^.]*\./, ''); 
 
   // Print the versions
-  console.log('Chromium version:', chromiumVersion);
   console.log('Chrome version:', chromeVersion);
+  console.log('Chromium version:', chromiumVersion);
   console.log('Firefox version:', firefoxVersion);
+  console.log('Brave version:', braveVersion);
   console.log('WebKit version:', webkitVersion);
 
   // Close browsers
+  await chromeBrowser.close();
   await chromiumBrowser.close();
   await firefoxBrowser.close();
   await webkitBrowser.close();
-  await chromeBrowser.close();
 
-  return [chromeVersion, chromiumVersion, firefoxVersion, webkitVersion, playwrightVersion];
-
+  return [chromeVersion, chromiumVersion, firefoxVersion, braveVersion, webkitVersion, playwrightVersion];
 }
 
 
 async function webkit_crawler(permission){
-  const URL = `https://albertofdr.github.io/`
   const browser = await webkit.launch();  
-  const page = await browser.newPage();
+  const context = await browser.newContext();
+  const page = await context.newPage();
   let powerful_feature = true;
 
   // Still not supported
@@ -61,7 +67,7 @@ async function webkit_crawler(permission){
   //   }
   // });
 
-  await page.goto(URL, { timeout: 60000 });
+  await page.goto(URL_FOR_TESTING, { timeout: 60000 });
   // other actions...
   powerful_feature = await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => {return true;}).catch((error)=>{return false});`);
   await browser.close();
@@ -69,9 +75,9 @@ async function webkit_crawler(permission){
 }
 
 async function firefox_crawler(permission){
-  const URL = `https://albertofdr.github.io/`
   const browser = await firefox.launch();  
-  const page = await browser.newPage();
+  const context = await browser.newContext();
+  const page = await context.newPage();
   let powerful_feature = true
 
   // Still not supported
@@ -83,13 +89,13 @@ async function firefox_crawler(permission){
   //   }
   // });
 
-  await page.goto(URL, {timeout: 60000});
+  await page.goto(URL_FOR_TESTING, {timeout: 60000});
   powerful_feature = await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => {return true;}).catch((error)=>{return false});`);
   await browser.close();
   return [powerful_feature, policy_controlled];
 }
 
-async function get_default_policy(chrome, permission){
+async function get_default_policy(browser_type, permission){
   /* Get Default Policy of a specific permission in Chromium/Chrome
    * Loading a parent page with an iframe and using allowsFeature with NO PP Header
    * Possible allowsFeature result:
@@ -102,12 +108,15 @@ async function get_default_policy(chrome, permission){
   let URL = `https://albertofdr.github.io/dummy-pages/testing-pages/live-editor.html?html=${iframeHTML}`
 
   let browser = "";
-  if(chrome){
+  if(browser_type === 'chrome'){
     browser = await chromium.launch({ channel: 'chrome' });
-  } else {
+  } else if(browser_type === 'chromium') {
     browser = await chromium.launch();
+  } else if (browser_type === 'brave') { 
+    browser = await chromium.launch({executablePath: BRAVE_BIN});
   }
-  const page = await browser.newPage();
+  const context = await browser.newContext();
+  const page = await context.newPage();
   await page.goto(URL, { timeout: 60000 });
 
   // Wait for iframe
@@ -132,15 +141,17 @@ async function get_default_policy(chrome, permission){
 }
 
 
-async function chromium_crawler(chrome, permission){
-  const URL = `https://albertofdr.github.io/`
+async function chromium_crawler(browser_type, permission){
   let browser = "";
-  if(chrome){
+  if(browser_type === 'chrome'){
     browser = await chromium.launch({ channel: 'chrome' });
-  } else {
+  } else if(browser_type === 'chromium') {
     browser = await chromium.launch();
+  } else if (browser_type === 'brave') { 
+    browser = await chromium.launch({executablePath: BRAVE_BIN});
   }
-  const page = await browser.newPage();
+  const context = await browser.newContext();
+  const page = await context.newPage();
   let powerful_feature = true
   let policy_controlled = true
 
@@ -179,7 +190,7 @@ async function chromium_crawler(chrome, permission){
   //   }
   // });
 
-  await page.goto(URL, { timeout: 60000 });
+  await page.goto(URL_FOR_TESTING, { timeout: 60000 });
   
   // powerful check
   powerful_feature = await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => {return true;}).catch((error)=>{return false});`);
@@ -191,7 +202,7 @@ async function chromium_crawler(chrome, permission){
   // Policy
   let default_policy = '';
   if (policy_controlled && default_policy_check_works){
-    default_policy = await get_default_policy(chrome, permission); 
+    default_policy = await get_default_policy(browser_type, permission); 
   } else if (policy_controlled && !default_policy_check_works){
     console.log(`Permission '${permission}' is policy-controlled but doesn't appear in 'document.featurePolicy.allowsFeature' even when PP header is *`);
   }
@@ -207,6 +218,7 @@ async function test(){
     "chrome_version": "",
     "chromium_version": "",
     "firefox_version": "",
+    "brave_version": "",
     "webkit_version": "",
     "playwright_version": "",
     "result": []
@@ -217,8 +229,9 @@ async function test(){
   results["chrome_version"] = versions[0]
   results["chromium_version"] = versions[1]
   results["firefox_version"] = versions[2]
-  results["webkit_version"] = versions[3]
-  results["playwright_version"] = versions[4]
+  results["brave_version"] = versions[3]
+  results["webkit_version"] = versions[4]
+  results["playwright_version"] = versions[5]
 
   console.log(`================== ANALYZING ${PERMISSIONS.length} PERMISSIONS`);
   for (const permission of PERMISSIONS){
@@ -227,28 +240,31 @@ async function test(){
     let permission_result = {
       rowHeader: permission,
       // Chrome
-      // powerful, pp
-     col1: "", col2: "",
+      // powerful, pp, default policy
+      col1: "", col2: "", col3: "",
       // Chromium
-      // powerful, pp
-      col3: "", col4: "",
+      // powerful, pp, default
+      col4: "", col5: "", col6: "",
       // Firefox
       // powerful, pp
-      col5: "", col6: "",
+      col7: "", col8: "",
+      // Brave
+      // powerful, pp, default
+      col9: "", col10: "", col11: "",
       // Webkit
       // powerful, pp
-      col7: "", col8: ""
+      col12: "", col13: ""
     }
     
     if (CHROME_TEST){
-      let [powerful_feature, policy_controlled, default_policy] = await chromium_crawler(true, permission) 
+      let [powerful_feature, policy_controlled, default_policy] = await chromium_crawler('chrome', permission) 
       permission_result["col1"] = powerful_feature;
       permission_result["col2"] = policy_controlled;
       permission_result["col3"] = default_policy;
     }
 
     if (CHROMIUM_TEST){ 
-      let [powerful_feature, policy_controlled, default_policy] = await chromium_crawler(false, permission) 
+      let [powerful_feature, policy_controlled, default_policy] = await chromium_crawler('chromium', permission) 
       permission_result["col4"] = powerful_feature;
       permission_result["col5"] = policy_controlled;
       permission_result["col6"] = default_policy;
@@ -260,10 +276,17 @@ async function test(){
       permission_result["col8"] = policy_controlled;
     };
 
-    if (WEBKIT_TEST){ 
-      let [powerful_feature, policy_controlled] = await webkit_crawler(permission) 
+    if (BRAVE_TEST){ 
+      let [powerful_feature, policy_controlled, default_policy] = await chromium_crawler('brave', permission) 
       permission_result["col9"] = powerful_feature;
       permission_result["col10"] = policy_controlled;
+      permission_result["col11"] = default_policy;
+    };
+
+    if (WEBKIT_TEST){ 
+      let [powerful_feature, policy_controlled] = await webkit_crawler(permission) 
+      permission_result["col12"] = powerful_feature;
+      permission_result["col13"] = policy_controlled;
     };
 
     console.log(permission_result);
