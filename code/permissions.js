@@ -250,6 +250,7 @@ const PERMISSIONS = [
 
     // https://github.com/w3c/webappsec-permissions-policy/issues/544
     "deferred-fetch",
+    "deferred-fetch-minimal",
 
     // https://wicg.github.io/web-otp/
     "otp-credentials",

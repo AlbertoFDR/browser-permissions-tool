@@ -90,7 +90,9 @@ async function firefox_crawler(permission){
   // });
 
   await page.goto(URL_FOR_TESTING, {timeout: 60000});
-  powerful_feature = await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => {return true;}).catch((error)=>{return false});`);
+  powerful_feature = await page.evaluate(`
+    navigator.permissions.query({ name: "${permission}" }).then((result) => { return true; }).catch( (error)=>{ if(error.message.includes("is not a valid value")) { return false; } else {return true; } });
+  `);
   await browser.close();
   return [powerful_feature, policy_controlled];
 }
@@ -193,7 +195,12 @@ async function chromium_crawler(browser_type, permission){
   await page.goto(URL_FOR_TESTING, { timeout: 60000 });
   
   // powerful check
-  powerful_feature = await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => {return true;}).catch((error)=>{return false});`);
+  // asking for push gives this error:
+  // Uncaught (in promise) NotSupportedError: Failed to execute 'query' on 'Permissions': Push Permission without userVisibleOnly:true isn't supported yet.
+  // So, there are specific cases
+  powerful_feature = await page.evaluate(`
+    navigator.permissions.query({ name: "${permission}" }).then((result) => { return true; }).catch( (error)=>{ if(error.message.includes("is not a valid enum value")) { return false; } else {return true; } });
+  `);
 
   // default_policy 
   let default_policy_check_works = await page.evaluate(`document.featurePolicy.allowsFeature('${permission}')`);
@@ -234,7 +241,7 @@ async function test(){
   results["playwright_version"] = versions[5]
 
   console.log(`================== ANALYZING ${PERMISSIONS.length} PERMISSIONS`);
-  for (const permission of PERMISSIONS){
+  for (const permission of PERMISSIONS.sort()){
 
     console.log(`============ ${permission}`);
     let permission_result = {
