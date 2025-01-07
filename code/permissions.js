@@ -44,6 +44,10 @@ const PERMISSIONS = [
     // https://webbluetoothcg.github.io/web-bluetooth/
     "bluetooth",
 
+    // Media Session
+    // https://www.w3.org/TR/mediasession/
+    "mediasession",
+
     // Encrypted media
     // https://w3c.github.io/encrypted-media/
     "encrypted-media",
@@ -83,6 +87,10 @@ const PERMISSIONS = [
     // PictureInPicture
     // https://w3c.github.io/picture-in-picture/
     "picture-in-picture",
+
+    // Digital Credentials
+    // https://wicg.github.io/digital-credentials/
+    "digital-credentials-get",
 
     // Federated Credential Management API
     // https://fedidcg.github.io/FedCM/
@@ -268,7 +276,6 @@ const PERMISSIONS = [
     "shared-storage",
     "shared-storage-select-url",
     "sub-apps",
-    "unload",
     "web-printing",
 
     // https://screen-share.github.io/capture-all-screens/#feature-policy-integration
