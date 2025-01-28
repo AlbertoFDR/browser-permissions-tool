@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Permissions Compatibility</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generator.html">Generator</a></li>
+        <li><a href="about.html">About</a></li>
+        <li> <a href="https://github.com/AlbertoFDR/browser-permissions-tool" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="github-icon" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.5 7.5 0 014 0c1.52-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        </li>
+      </ul>
+    </div>
+    <header>
+    <h1>Create Your Custom Header</h1>
+    <h3 id="date">date</h3>
+    </header>
+    <div class="container">
+  <!-- Comments section -->
+  <div class="comments">
+    <p>Using the permission result list, this page lets you create a permissions policy header for your website. In this list, all the policy-controlled permissions that are valid for at least one browser vendor. In this header, you can specify different directives for the policy-controlled permissions.</p>
+    <p class="important">Note: Even though you can use the 'Disable Powerful Permissions' option, I highly recommend double-checking manually.</p>
+    <p class="important">Inspired by <a href="https://permissionspolicy.com" target="_blank">permissionspolicy.com</a></p>
+  </div>
+  <!-- Generated Header section -->
+  <div class="generated">
+    <div class="generated-context">
+      <p>Example:</p>
+    </div>
+    <br>
+    <code id="permissions-policy">Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()</code>
+  </div>
+
+  <div id="all-buttons">
+    <button class="button" id="disable-all" onclick="disableAll()">Disable All Permission</button>
+    <button class="button" id="disable-all-powerful" onclick="disableAllPowerful()">Disable Powerful Permissions</button>
+    <button class="button" id="start-again" onclick="startAgain()">Start Again</button>
+  </div>
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr id="topHeaderRow">
+        <th>Permission</th>
+        <th>Powerful</th>
+        <th>Disable</th>
+        <th>Self</th>
+        <th>Origin</th>
+        <th>*</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+  </div>
+    <table id="dataTable">
+      <thead>
+        <tr id="topHeaderRow"></tr>
+        <tr id="columnHeaderRow"></tr> 
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <footer>
+    <p>Project by <a href="https://github.com/albertofdr" target="_blank">bubu</a>.</p>
+  </footer>
+  <script src="static/generator.js"></script>
+</body>
+</html>

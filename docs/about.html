@@ -11,6 +11,7 @@
     <div class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="generator.html">Generator</a></li>
         <li><a href="about.html">About</a></li>
         <li> <a href="https://github.com/AlbertoFDR/browser-permissions-tool" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="github-icon" viewBox="0 0 16 16">
@@ -25,6 +26,11 @@
       This tool is designed to evaluate browser features and determine whether they are powerful or restricted by policy. To achieve this, I created a simple prototype inspired by the concept of <a href="https://privacytests.org">privacytests.org</a>. This project is open-source, and the code is available for access (<a href="https://github.com/AlbertoFDR/browser-permissions-tool">Github code</a>). In essence, the tool evaluates each known permission listed in its codebase to determine whether it is powerful and/or controlled by policy. To check if a permission is powerful, the tool leverages the <code>navigator.permissions.query</code> function. For testing policy-controlled features, it utilizes the <code>Permissions-Policy header</code>.
       
       As noted, however, this header is currently not supported in Firefox or WebKit. That said, the lack of support for the header does not imply that these browsers fail to implement inheritance to iframes using the <code>allow</code> attribute.
+      </p>
+      <h1><a href="https://albertofdr.github.io/web-security-class/browser/browser.permissions">How Browser Permissions Works?</a></h1>
+      <br>
+      <p>
+      If you're not familiar with how browser permissions work, I wrote a blog on the topic. In it, I explain what browser permissions are, their key characteristics, common misconceptions among developers, and much more. I highly recommend checking it out! <a href="https://albertofdr.github.io/web-security-class/browser/browser.permissions">Link to Browser Permissions blog.</a>
       </p>
       <h1>W3C Standards</h1>
       <ul>
