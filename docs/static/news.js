@@ -44,7 +44,7 @@ async function fillPage() {
     const h3Element = document.createElement('h3');
     h3Element.textContent = result.slice(0, -5) + " ";
     let h3ElementLink = document.createElement('a');
-    h3ElementLink.setAttribute('href', "/index.html?json="+result);
+    h3ElementLink.setAttribute('href', "/browser-permissions-tool/index.html?json="+result);
     h3ElementLink.textContent = `(show)` 
     h3Element.appendChild(h3ElementLink);
     new_div.appendChild(h3Element);
