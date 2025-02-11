@@ -1,5 +1,5 @@
-// const RESULTS_URL = "/browser-permissions-tool/results/";
-const RESULTS_URL = "/results/";
+const RESULTS_URL = "/browser-permissions-tool/results/";
+//const RESULTS_URL = "/results/";
 
 async function fetchAllVersions() {
   // const RESULTS_GITHUB_API = "https://api.github.com/repositories/896178030/contents/docs/results";
