@@ -101,12 +101,27 @@ function buildTable(data) {
   });
 }
 
-async function loadData(){
-  return await (await fetch('/browser-permissions-tool/results/last.json')).json()
+async function loadData(data){
+  return await (await fetch('/browser-permissions-tool/results/' + data)).json()
+  // return await (await fetch('/results/' + data)).json()
 }
 
 async function loadPage(){
-  let data = await loadData()// JSON data example
+  // any url param url?json=01-01-2024.json
+  const urlParams = new URLSearchParams(window.location.search); // Get the URL query parameters
+  const jsonParam = urlParams.get('json'); // Get the value of the 'json' parameter
+
+  // Regular expression to check if the format is 'XX-XX-XXXX.json'
+  const jsonFormat = /^\d{2}-\d{2}-\d{4}\.json$/;
+  
+  let data;
+  if (jsonParam && jsonFormat.test(jsonParam)) { 
+    data = await loadData(jsonParam); 
+  } else {
+    data = await loadData('last.json') 
+  }
+
+  // JSON data example
   // Example
   //const data = {
   //  "date": "11-9-2024",
@@ -120,6 +135,7 @@ async function loadPage(){
   //    { rowHeader: "microphone", col1: "1-1", col2: "1-2", col3: "1-3", col4: "1-4", col5: "1-5", col6: "1-6", col7: "1-5", col8: "1-6", col9: "1-6"}
   //  ],
   //};
+  
   buildTable(data);
 }
 

@@ -48,12 +48,13 @@ function originParsing(origins){
   let toReturn = '';
   let originsArray = origins.split(';');
   originsArray.forEach(origin => {
-    try {
-      let url = new URL(origin); // Try creating a URL object
-      toReturn += `"${url.origin}" `;
-    } catch (e) {
-      console.log("Invalid Origin:", origin);
-    }
+      if (!origin.startsWith('http://') && !origin.startsWith('https://')){
+        console.log("Invalid protocol (https?):", origin);
+        alert(`Invalid protocol (https?): ${origin}`);
+        return
+      }
+
+      toReturn += `"${origin}" `;
   });
 
   return toReturn.trim();

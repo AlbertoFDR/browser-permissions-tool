@@ -220,6 +220,37 @@ tbody td {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue outline */
 }
 
+/* Copy Button Styling */
+#copy-btn {
+  font-size: 14px; /* Match readable font size */
+  padding: 8px 16px; /* Comfortable padding */
+  background-color: #28a745; /* Green color for positive action */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  font-weight: bold; /* Bold text */
+  display: inline-flex; /* Align text and emoji properly */
+  align-items: center; /* Center content vertically */
+  gap: 5px; /* Space between emoji and text */
+  position: relative;
+  float: right; /* Align to the right */
+  margin-bottom: 10px; /* Space below button */
+}
+
+/* Hover effect */
+#copy-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Button focus style for accessibility */
+#copy-btn:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Subtle green outline */
+}
+
 
 input {
   width: 100%; /* Make the input take up the full width of the cell */

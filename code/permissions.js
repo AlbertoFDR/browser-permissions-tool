@@ -3,6 +3,21 @@
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/common/permissions_policy/policy_helper_public.h
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/permissions/permission_descriptor.idl
 const PERMISSIONS = [
+    // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#385
+    "popins",
+
+    // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#514
+    "web-app-installation",
+
+    // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#238
+    "controlled-frame",
+
+    // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#313
+    "frobulate",
+
+    // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#366
+    "media-playback-while-not-visible",
+
     // Camera & Audio
     // https://www.w3.org/TR/mediacapture-streams/
     "device-info",
@@ -176,12 +191,15 @@ const PERMISSIONS = [
     "ch-ua-platform",
     "ch-ua-platform-version",
     "ch-ua-wow64",
+    "ch-ua-high-entropy-values",
 
     // Direct Sockets
     // Just Google 'standard'
     // Still unofficial draft
     // https://wicg.github.io/direct-sockets/
     "direct-sockets",
+    // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#271 
+    "direct-sockets-private",
 
     // Page Lifecycle
     // Not very updated
@@ -214,7 +232,6 @@ const PERMISSIONS = [
     "push",
     "background-fetch",
     "background-sync",
-    "persistent-storage",
     "nfc",
 
     // https://github.com/WICG/aom
@@ -222,7 +239,12 @@ const PERMISSIONS = [
     "periodic-background-sync",
     // Different to screen-wake-lock
     "system-wake-lock",
+
+
     "storage-access",
+    "persistent-storage",
+    // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#297
+    "fenced-unpartitioned-storage-read",
 
     // https://privacycg.github.io/requestStorageAccessFor/
     "top-level-storage-access",

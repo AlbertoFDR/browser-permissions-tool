@@ -11,7 +11,9 @@
     <div class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="generator.html">Generator</a></li>
+        <li><a href="news.html">News/Versions</a></li>
+        <li><a href="generator.html">Header Generator</a></li>
+        <li><a href="https://github.com/AlbertoFDR/browser-permissions-tool/issues">Open Issue</a></li>
         <li><a href="about.html">About</a></li>
         <li> <a href="https://github.com/AlbertoFDR/browser-permissions-tool" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="github-icon" viewBox="0 0 16 16">
@@ -20,20 +22,23 @@
       </ul>
     </div>
     <header>
-    <h1>Create Your Custom Header</h1>
+    <h1>Create Your Permissions-Policy Header</h1>
     <h3 id="date">date</h3>
     </header>
     <div class="container">
   <!-- Comments section -->
   <div class="comments">
-    <p>Using the permission result list, this page lets you create a permissions policy header for your website. In this list, all the policy-controlled permissions that are valid for at least one browser vendor. In this header, you can specify different directives for the policy-controlled permissions.</p>
+    <p>Using the <a href="index.html">permission result list</a>, this page lets you create a permissions policy header for your website. In this list, all the policy-controlled permissions that are valid for at least one browser vendor. In this header, you can specify different directives for the policy-controlled permissions.</p>
     <p class="important">Note: Even though you can use the 'Disable Powerful Permissions' option, I highly recommend double-checking manually.</p>
     <p class="important">Inspired by <a href="https://permissionspolicy.com" target="_blank">permissionspolicy.com</a></p>
   </div>
   <!-- Generated Header section -->
   <div class="generated">
+    <button id="copy-btn">📋 Copy</button>
     <div class="generated-context">
       <p>Example:</p>
+      <p>Nº of Permissions: 27</p>
+      <p>Nº of Bytes: 524</p>
     </div>
     <br>
     <code id="permissions-policy">Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()</code>
@@ -74,5 +79,17 @@
     <p>Project by <a href="https://github.com/albertofdr" target="_blank">bubu</a>.</p>
   </footer>
   <script src="static/generator.js"></script>
+  <script>
+    document.getElementById("copy-btn").addEventListener("click", function() {
+      const codeElement = document.getElementById("permissions-policy");
+      const textToCopy = codeElement.innerText;
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        alert("Copied to clipboard!");
+      }).catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+    });
+  </script>
 </body>
 </html>
