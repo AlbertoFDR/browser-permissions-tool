@@ -224,6 +224,11 @@ const PERMISSIONS = [
     // Proposed
     // https://github.com/schwering/shared-autofill
     "shared-autofill",
+    // https://github.com/w3c/webappsec-permissions-policy/pull/560
+    // https://github.com/explainers-by-googlers/safe-text-input/blob/main/manual-text.md
+    "manual-text",
+    "autofill",
+
 
     // Captured Surface Control
     // https://screen-share.github.io/captured-surface-control/
