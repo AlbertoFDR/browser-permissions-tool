@@ -24,28 +24,40 @@
       </ul>
     </div>
     <header>
-      <h1>News</h1>
+    <h1>Browser Permissions Information</h1>
     </header>
-    <br>
-  <div class="container">
-    <div id="version-container">
-      <!-- Versions section -->
-      <div class="comments">
-        <h3 id="version">XX-XX-XX</h3>
-        Browser versions:
-        <ul>
-          <li>Chrome: 131</li>
-          <li>Chromium: 131</li>
-          <li>Firefox: 131</li>
-          <li>Brave: 1.74</li>
-          <li>Webkit: 18.2</li>
-        </ul>
-      </div>
-    </div>
+    <div class="container">
+  <!-- Comments section -->
+  <div class="comments">
+    <p>This table contains all the information collected about each browser permission.</p>
+  </div>
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr id="topHeaderRow">
+        <th>Permission</th>
+        <th>W3C Standard</th>
+        <th>W3C Standard Status</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+  </div>
+    <table id="dataTable">
+      <thead>
+        <tr id="topHeaderRow"></tr>
+        <tr id="columnHeaderRow"></tr> 
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
   </div>
   <footer>
     <p>Project by <a href="https://github.com/albertofdr" target="_blank">bubu</a>.</p>
   </footer>
-  <script src="static/news.js"></script>
+  <script src="static/information.js"></script>
 </body>
 </html>

@@ -1,0 +1,1246 @@
+{
+    "accelerometer": {
+        "standard": "Generic Sensor API",
+        "standard-link": "https://www.w3.org/TR/generic-sensor/#permission-api",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/generic-sensor/",
+        "comments": ""
+    },
+
+    "gyroscope": {
+        "standard": "Generic Sensor API",
+        "standard-link": "https://www.w3.org/TR/generic-sensor/#permission-api",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/generic-sensor/",
+        "comments": ""
+    },
+
+    "ambient-light-sensor": {
+        "standard": "Generic Sensor API",
+        "standard-link": "https://www.w3.org/TR/generic-sensor/#permission-api",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/generic-sensor/",
+        "comments": ""
+    },
+
+    "magnetometer": {
+        "standard": "Generic Sensor API",
+        "standard-link": "https://www.w3.org/TR/generic-sensor/#permission-api",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/generic-sensor/",
+        "comments": ""
+    },
+
+    "accessibility-events": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "comments": "<a href='https://github.com/WICG/aom'>Accessibility Object Model (AOM) Explainer from Web Incubator CG</a>"
+    },
+
+    "all-screens-capture": {
+        "standard": "Capture all screens",
+        "standard-link": "https://screen-share.github.io/capture-all-screens/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://screen-share.github.io/capture-all-screens/",
+        "comments": ""
+    },
+
+    "attribution-reporting": {
+        "standard": "Attribution Reporting",
+        "standard-link": "https://wicg.github.io/attribution-reporting-api/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/attribution-reporting-api/",
+        "comments": ""
+    },
+
+    "conversion-measurement": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "comments": "Maybe deprecated permission name for <a href='https://wicg.github.io/attribution-reporting-api/'>Draft Community Group (CG) Report</a>."
+    },
+
+
+    "device-info": {
+        "standard": "Media Capture and Streams",
+        "standard-link": "https://www.w3.org/TR/mediacapture-streams/",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/mediacapture-streams/",
+        "comments": "deprecated name."
+    },
+
+    "camera": {
+        "standard": "Media Capture and Streams",
+        "standard-link": "https://www.w3.org/TR/mediacapture-streams/",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/mediacapture-streams/",
+        "comments": ""
+    },
+
+
+    "microphone": {
+        "standard": "Media Capture and Streams",
+        "standard-link": "https://www.w3.org/TR/mediacapture-streams/",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/mediacapture-streams/",
+        "comments": ""
+    },
+
+
+    "popins": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "comments": "<a href='https://explainers-by-googlers.github.io/partitioned-popins/#permissions-policy'>Explainer from Google</a>. <a href='https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#385'>Chromium Src</a>."
+    },
+
+    "web-app-installation": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "comments": "<a href='https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md'>MS Edge Explainer</a>. <a href='https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#514'>Chromium Src</a>."
+    },
+
+    "controlled-frame": {
+        "standard": "Controlled Frame API",
+        "standard-link": "https://wicg.github.io/controlled-frame/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/controlled-frame/",
+        "comments": "<a href='https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#238'>Chromium Src</a>."
+    },
+
+    "frobulate": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "comments": "<a href='https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#313'>Chromium Src</a>."
+    },
+
+    "media-playback-while-not-visible": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "comments": "<a href='https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/IframeMediaPause/iframe_media_pausing.md'>MS Edge Explainer</a>.<a href='https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#366'>Chromium Src</a>."
+    },
+
+    "speaker": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "comments": "Deprecated name, renamed to `speaker-selection` (<a href='https://github.com/w3c/permissions/pull/218'>link</a>)."
+    },
+
+    "speaker-selection": {
+        "standard": "Audio Output Devices API",
+        "standard-link": "https://www.w3.org/TR/audio-output/#permissions-policy-integration",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/audio-output/",
+        "comments": ""
+    },
+
+    "geolocation": {
+        "standard": "Geolocation",
+        "standard-link": "https://www.w3.org/TR/geolocation/",
+        "standard-status": "Recommendation",
+        "standard-status-link": "https://www.w3.org/standards/history/geolocation/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "usb": {
+        "standard": "WebUSB API",
+        "standard-link": "https://wicg.github.io/webusb/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/webusb/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "usb-unrestricted": {
+        "standard": "WebUSB API",
+        "standard-link": "https://wicg.github.io/webusb/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/webusb/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "Only enabled for Isolated Web Apps (IWA). "
+    },
+
+    "compute-pressure": {
+        "standard": "Compute Pressure Level 1",
+        "standard-link": "https://www.w3.org/TR/compute-pressure/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/compute-pressure/",
+        "comments": ""
+    },
+
+    "notifications": {
+        "standard": "Notifications API",
+        "standard-link": "https://notifications.spec.whatwg.org/",
+        "standard-status": "Living Standard",
+        "standard-status-link": "https://notifications.spec.whatwg.org/",
+        "comments": ""
+    },
+
+    "bluetooth": {
+        "standard": "Web Bluetooth",
+        "standard-link": "https://webbluetoothcg.github.io/web-bluetooth/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://webbluetoothcg.github.io/web-bluetooth/",
+        "comments": ""
+    },
+
+    "mediasession": {
+        "standard": "Media Session",
+        "standard-link": "https://www.w3.org/TR/mediasession/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/mediasession/",
+        "comments": ""
+    },
+
+    "encrypted-media": {
+        "standard": "Encrypted Media Extensions",
+        "standard-link": "https://www.w3.org/TR/encrypted-media-2/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/encrypted-media-2/",
+        "comments": ""
+    },
+
+    "battery": {
+        "standard": "Battery Status API",
+        "standard-link": "https://w3c.github.io/battery/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/battery-status/",
+        "comments": ""
+    },
+
+    "display-capture": {
+        "standard": "Screen Capture",
+        "standard-link": "https://www.w3.org/TR/screen-capture/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/screen-capture/",
+        "comments": ""
+    },
+
+    "fullscreen": {
+        "standard": "Fullscreen API",
+        "standard-link": "https://fullscreen.spec.whatwg.org/",
+        "standard-status": "Living Standard",
+        "standard-status-link": "https://fullscreen.spec.whatwg.org/",
+        "comments": ""
+    },
+
+    "hid": {
+        "standard": "WebHID API",
+        "standard-link": "https://wicg.github.io/webhid/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/webhid/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "idle-detection": {
+        "standard": "Idle Detection API",
+        "standard-link": "https://wicg.github.io/idle-detection/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/idle-detection/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "keyboard-map": {
+        "standard": "Keyboard Map",
+        "standard-link": "https://wicg.github.io/keyboard-map/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/keyboard-map/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "midi": {
+        "standard": "Web MIDI API",
+        "standard-link": "https://webaudio.github.io/web-midi-api/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/webmidi/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "payment": {
+        "standard": "Payment Request API",
+        "standard-link": "https://www.w3.org/TR/payment-request/",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/payment-request/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "picture-in-picture": {
+        "standard": "Picture-in-Picture",
+        "standard-link": "https://www.w3.org/TR/picture-in-picture/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/picture-in-picture/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "digital-credentials-get": {
+        "standard": "Digital Credentials",
+        "standard-link": "https://wicg.github.io/digital-credentials/",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "identity-credentials-get": {
+        "standard": "Federated Credential Management API",
+        "standard-link": "https://www.w3.org/TR/fedcm/",
+        "standard-status": "First Public Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/fedcm-1/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "publickey-credentials-create": {
+        "standard": "Web Authentication: An API for accessing Public Key Credentials Level 3",
+        "standard-link": "https://www.w3.org/TR/webauthn-3/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/webauthn-3/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "publickey-credentials-get": {
+        "standard": "Web Authentication: An API for accessing Public Key Credentials Level 3",
+        "standard-link": "https://www.w3.org/TR/webauthn-3/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/webauthn-3/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "screen-wake-lock": {
+        "standard": "Screen Wake Lock API",
+        "standard-link": "https://w3c.github.io/screen-wake-lock/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/screen-wake-lock/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "system-wake-lock": {
+        "standard": "Screen Wake Lock API",
+        "standard-link": "https://w3c.github.io/screen-wake-lock/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/screen-wake-lock/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "Deprecated name for screen-wake-lock."
+    },
+
+    "serial": {
+        "standard": "Web Serial API",
+        "standard-link": "https://wicg.github.io/serial/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/serial/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "web-share": {
+        "standard": "Web Share API",
+        "standard-link": "https://www.w3.org/TR/web-share/",
+        "standard-status": "Recommendation",
+        "standard-status-link": "https://www.w3.org/standards/history/web-share/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "window-management": {
+        "standard": "Window Management",
+        "standard-link": "https://www.w3.org/TR/window-management/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/window-management/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "clipboard-read": {
+        "standard": "Clipboard API and events",
+        "standard-link": "https://www.w3.org/TR/clipboard-apis/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/clipboard-apis/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/w3c/clipboard-apis/issues/163#issuecomment-1878072165'>Relevant API and permission discussion</a>."
+    },
+
+    "clipboard-write": {
+        "standard": "Clipboard API and events",
+        "standard-link": "https://www.w3.org/TR/clipboard-apis/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/clipboard-apis/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/w3c/clipboard-apis/issues/163#issuecomment-1878072165'>Relevant API and permission discussion</a>."
+    },
+
+    "clipboard": {
+        "standard": "Clipboard API and events",
+        "standard-link": "https://www.w3.org/TR/clipboard-apis/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/clipboard-apis/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/w3c/clipboard-apis/issues/163#issuecomment-1878072165'>Relevant API and permission discussion</a>."
+    },
+
+    "gamepad": {
+        "standard": "Gamepad",
+        "standard-link": "https://www.w3.org/TR/gamepad/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/gamepad/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "browsing-topics": {
+        "standard": "Topics API",
+        "standard-link": "https://patcg-individual-drafts.github.io/topics/",
+        "standard-status": "Unofficial Proposal Draft",
+        "standard-status-link": "https://patcg-individual-drafts.github.io/topics/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "interest-cohort": {
+        "standard": "Topics API",
+        "standard-link": "https://patcg-individual-drafts.github.io/topics/",
+        "standard-status": "Unofficial Proposal Draft",
+        "standard-status-link": "https://patcg-individual-drafts.github.io/topics/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "local-fonts": {
+        "standard": "Local Font Access API",
+        "standard-link": "https://wicg.github.io/local-font-access/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/local-font-access/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "xr-spatial-tracking": {
+        "standard": "WebXR Device API",
+        "standard-link": "https://www.w3.org/TR/webxr/",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/webxr/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "autoplay": {
+        "standard": "HTML Living Standard",
+        "standard-link": "https://html.spec.whatwg.org/multipage/infrastructure.html#policy-controlled-features",
+        "standard-status": "Living Standard",
+        "standard-status-link": "https://html.spec.whatwg.org/multipage/infrastructure.html#policy-controlled-features",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "cross-origin-isolated": {
+        "standard": "HTML Living Standard",
+        "standard-link": "https://html.spec.whatwg.org/multipage/infrastructure.html#policy-controlled-features",
+        "standard-status": "Living Standard",
+        "standard-status-link": "https://html.spec.whatwg.org/multipage/infrastructure.html#policy-controlled-features",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-save-data": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "ch-dpr": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-width": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-viewport-width": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-viewport-height": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-device-memory": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-rtt": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-downlink": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ect": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-prefers-color-scheme": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-prefers-reduced-motion": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "ch-ua-arch": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-bitness": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-form-factors": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-full-version": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-full-version-list": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-mobile": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "ch-ua-model": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-platform": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "ch-ua-platform-version": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-wow64": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "ch-ua-high-entropy-values": {
+        "standard": "User-Agent Client Hints",
+        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "direct-sockets": {
+        "standard": "Direct Sockets API",
+        "standard-link": "https://wicg.github.io/direct-sockets/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/direct-sockets/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "none",
+        "comments": ""
+    },
+
+    "direct-sockets-private": {
+        "standard": "Direct Sockets API",
+        "standard-link": "https://wicg.github.io/direct-sockets/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/direct-sockets/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "none",
+        "comments": "Private Network Access."
+    },
+
+    "execution-while-not-rendered": {
+        "standard": "Page Lifecycle",
+        "standard-link": "https://wicg.github.io/page-lifecycle/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/page-lifecycle/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "execution-while-out-of-viewport": {
+        "standard": "Page Lifecycle",
+        "standard-link": "https://wicg.github.io/page-lifecycle/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/page-lifecycle/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "navigation-override": {
+        "standard": "CSS Spatial Navigation Level 1",
+        "standard-link": "https://www.w3.org/TR/css-nav-1/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/TR/css-nav-1/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "sync-xhr": {
+        "standard": "XMLHTTPRequest Living Standard",
+        "standard-link": "https://xhr.spec.whatwg.org/#feature-policy-integration",
+        "standard-status": "Living Standard",
+        "standard-status-link": "https://xhr.spec.whatwg.org/#feature-policy-integration",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/w3c/webappsec-permissions-policy/issues/410'>Github Issue Discussion for deprecation.</a>"
+    },
+
+    "shared-autofill": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/schwering/shared-autofill'> Deprecated.</a>"
+    },
+
+    "manual-text": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/explainers-by-googlers/safe-text-input/blob/main/manual-text.md'>Google Explainer.</a>"
+    },
+
+    "autofill": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/explainers-by-googlers/safe-text-input/blob/main/autofill.md'>Google Explainer.</a>"
+    },
+
+    "captured-surface-control": {
+        "standard": "Captured Surface Control",
+        "standard-link": "https://w3c.github.io/mediacapture-surface-control/",
+        "standard-status": "W3C Editor's Draft",
+        "standard-status-link": "https://w3c.github.io/mediacapture-surface-control/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "push": {
+        "standard": "Push API",
+        "standard-link": "https://www.w3.org/TR/push-api/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/push-api/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": ""
+    },
+
+    "background-fetch": {
+        "standard": "Background Fetch",
+        "standard-link": "https://wicg.github.io/background-fetch/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/background-fetch/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": ""
+    },
+
+    "background-sync": {
+        "standard": "Web Background Synchronization",
+        "standard-link": "https://wicg.github.io/background-sync/spec/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/background-sync/spec/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": ""
+    },
+
+    "nfc": {
+        "standard": "Web NFC",
+        "standard-link": "https://w3c.github.io/web-nfc/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://w3c.github.io/web-nfc/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": ""
+    },
+
+    "periodic-background-sync": {
+        "standard": "Web Periodic Background Synchronization",
+        "standard-link": "https://wicg.github.io/periodic-background-sync/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/periodic-background-sync/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": "deprecated?"
+    },
+
+    "storage-access": {
+        "standard": "The Storage Access API",
+        "standard-link": "https://privacycg.github.io/storage-access/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://privacycg.github.io/storage-access/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "persistent-storage": {
+        "standard": "Storage Living Standard",
+        "standard-link": "https://storage.spec.whatwg.org/#persistence",
+        "standard-status": "Living Standard",
+        "standard-status-link": "https://storage.spec.whatwg.org/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": ""
+    },
+
+    "fenced-unpartitioned-storage-read": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/WICG/fenced-frame/blob/master/explainer/fenced_frames_with_local_unpartitioned_data_access.md#new-permissions-policy-fenced-unpartitioned-storage-read'>WICG Explainer.</a>"
+    },
+
+    "top-level-storage-access": {
+        "standard": "requestStorageAccessFor API",
+        "standard-link": "https://privacycg.github.io/requestStorageAccessFor/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://privacycg.github.io/requestStorageAccessFor/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": ""
+    },
+
+    "keyboard-lock": {
+        "standard": "Keyboard Lock",
+        "standard-link": "https://wicg.github.io/keyboard-lock/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/keyboard-lock/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/WICG/keyboard-lock/issues/73'>Github Issue: 'Integrate pointer lock with the permissions API #73'.</a>"
+    },
+
+    "pointer-lock": {
+        "standard": "Keyboard Lock",
+        "standard-link": "https://wicg.github.io/keyboard-lock/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/keyboard-lock/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": false,
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/WICG/keyboard-lock/issues/73'>Github Issue: 'Integrate pointer lock with the permissions API #73'.</a>"
+    },
+
+    "focus-without-user-activation": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/w3c/webappsec-permissions-policy/blob/main/policies/focus-without-user-activation.md'>GitHub Explainer.</a>"
+    },
+
+    "join-ad-interest-group": {
+        "standard": "Protected Audience (formerly FLEDGE)",
+        "standard-link": "https://wicg.github.io/turtledove/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/turtledove/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": "<a href='https://github.com/WICG/turtledove/issues/522'>Changing Default allowlist from '*' to 'self'.</a>"
+    },
+
+    "run-ad-auction": {
+        "standard": "Protected Audience (formerly FLEDGE)",
+        "standard-link": "https://wicg.github.io/turtledove/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/turtledove/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": "<a href='https://github.com/WICG/turtledove/issues/522'>Changing Default allowlist from '*' to 'self'.</a>"
+    },
+
+    "smart-card": {
+        "standard": "Web Smart Card API",
+        "standard-link": "https://wicg.github.io/web-smart-card/",
+        "standard-status": "Unofficial Draft",
+        "standard-status-link": "https://wicg.github.io/web-smart-card/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "sync-script": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/WICG/document-policy/issues/2'>Moved to document-policy standard</a>."
+    },
+
+    "trust-token-redemption": {
+        "standard": "Private State Token API",
+        "standard-link": "https://wicg.github.io/trust-token-api/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/trust-token-api/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/WICG/trust-token-api/issues/106'>Github Issue: 'Consider dropping the 'trust-token-redemption' feature policy?'.</a>"
+    },
+
+    "private-state-token-issuance": {
+        "standard": "Private State Token API",
+        "standard-link": "https://wicg.github.io/trust-token-api/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/trust-token-api/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/WICG/trust-token-api/issues/106'>Github Issue: 'Consider dropping the 'trust-token-redemption' feature policy?'.</a>"
+    },
+
+    "private-state-token-redemption": {
+        "standard": "Private State Token API",
+        "standard-link": "https://wicg.github.io/trust-token-api/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/trust-token-api/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/WICG/trust-token-api/issues/106'>Github Issue: 'Consider dropping the 'trust-token-redemption' feature policy?'.</a>"
+    },
+
+    "unload": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/fergald/docs/blob/master/explainers/permissions-policy-unload.md'>Github Explainer.</a>"
+    },
+
+    "vertical-scroll": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/w3c/webappsec-permissions-policy/blob/main/policies/vertical_scroll.md'>Github Explainer.</a>"
+    },
+
+    "document-domain": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md#retired-features'>Permissions Policy Standard Github mention as retired.</a>"
+    },
+
+    "window-placement": {
+        "standard": "Window Management",
+        "standard-link": "https://www.w3.org/TR/window-management/",
+        "standard-status": "Working Draft",
+        "standard-status-link": "https://www.w3.org/standards/history/window-management/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "<a href='https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md#retired-features'>Permissions Policy Standard Github mention as retired.</a>"
+    },
+
+    "deferred-fetch": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/WICG/pending-beacon/blob/main/docs/fetch-later-api.md#permissions-policy-deferred-fetch-full-and-deferred-fetch-minimal'>Github Explainer</a>.<a href='https://github.com/w3c/webappsec-permissions-policy/issues/544'>Github Issue in Permissions-Policy Standard.</a>"
+    },
+
+    "deferred-fetch-minimal": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/WICG/pending-beacon/blob/main/docs/fetch-later-api.md#permissions-policy-deferred-fetch-full-and-deferred-fetch-minimal'>Github Explainer</a>.<a href='https://github.com/w3c/webappsec-permissions-policy/issues/544'>Github Issue in Permissions-Policy Standard.</a>"
+    },
+
+    "otp-credentials": {
+        "standard": "WebOTP API",
+        "standard-link": "https://wicg.github.io/web-otp/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/web-otp/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "private-aggregation": {
+        "standard": "Private Aggregation API",
+        "standard-link": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+        "standard-status": "Unofficial Proposal Draft",
+        "standard-status-link": "https://patcg-individual-drafts.github.io/private-aggregation-api/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "shared-storage": {
+        "standard": "Shared Storage API",
+        "standard-link": "https://wicg.github.io/shared-storage/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/shared-storage",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "shared-storage-select-url": {
+        "standard": "Shared Storage API",
+        "standard-link": "https://wicg.github.io/shared-storage/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://wicg.github.io/shared-storage",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "*",
+        "comments": ""
+    },
+
+    "sub-apps": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "For PWA. <a href='https://github.com/ivansandrk/multi-apps/blob/main/explainer.md'>Github Explainer.</a>"
+    },
+
+    "web-printing": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/WICG/web-printing'>Github Explainer.</a>"
+    },
+
+    "solana": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/brave/brave-core/blob/553ed06aae4af211e5607093851724980cbc664b/patches/third_party-blink-renderer-core-permissions_policy-permissions_policy_features.json5.patch'>Brave Code.</a>"
+    },
+
+    "ethereum": {
+        "standard": "",
+        "standard-link": "",
+        "standard-status": "",
+        "standard-status-link": "",
+        "powerful-by-standard": "",
+        "permissions-policy-by-standard": "",
+        "default-allowlist-by-standard": "",
+        "comments": "<a href='https://github.com/brave/brave-core/blob/553ed06aae4af211e5607093851724980cbc664b/patches/third_party-blink-renderer-core-permissions_policy-permissions_policy_features.json5.patch'>Brave Code.</a>"
+    }
+}
