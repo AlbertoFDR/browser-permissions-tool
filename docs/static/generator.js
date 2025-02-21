@@ -128,6 +128,38 @@ function rowChange(element){
   updateHeader();
 }
 
+let sortAscendingPowerful = true;
+let sortAscendingPermission = true;
+
+function sortTableByPowerful() {
+  const tableBody = document.getElementById('tableBody');
+  const rows = Array.from(tableBody.getElementsByTagName('tr'));
+  
+  rows.sort((a, b) => {
+    const aValue = a.cells[1].textContent.trim() === '✅' ? 1 : 0;
+    const bValue = b.cells[1].textContent.trim() === '✅' ? 1 : 0;
+    return sortAscendingPowerful ? aValue - bValue : bValue - aValue;
+  });
+  
+  sortAscendingPowerful = !sortAscendingPowerful;
+  tableBody.innerHTML = '';
+  rows.forEach(row => tableBody.appendChild(row));
+}
+
+function sortTableByPermission() {
+  const tableBody = document.getElementById('tableBody');
+  const rows = Array.from(tableBody.getElementsByTagName('tr'));
+  
+  rows.sort((a, b) => {
+    const aValue = a.cells[0].textContent.trim().toLowerCase();
+    const bValue = b.cells[0].textContent.trim().toLowerCase();
+    return sortAscendingPermission ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+  });
+  
+  sortAscendingPermission = !sortAscendingPermission;
+  tableBody.innerHTML = '';
+  rows.forEach(row => tableBody.appendChild(row));
+}
 
 // Function to build the table
 function buildTable(data) {
@@ -146,7 +178,14 @@ function buildTable(data) {
   tableBody.innerHTML = '';
 
   let permissionsPolicyColumns = ["col2", "col5", "col10"]
+  
+  const permissionHeader = document.getElementById('permission');
+  permissionHeader.style.cursor = 'pointer';
+  permissionHeader.onclick = sortTableByPermission;
 
+  const powerHeader = document.getElementById("powerful");
+  powerHeader.style.cursor = 'pointer';
+  powerHeader.onclick = sortTableByPowerful;
 
   // Add table rows
   permissionsData.forEach(row => {
