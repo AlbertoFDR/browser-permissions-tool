@@ -1,5 +1,4 @@
-const RESULTS_URL = "/browser-permissions-tool/results/";
-//const RESULTS_URL = "/results/";
+const RESULTS_URL = document.location.pathname.replace(/\/[^/]*$/, '/') + "results/";
 
 async function fetchAllVersions() {
   // Discarded because of Github Rate Limit
@@ -22,7 +21,7 @@ async function fillPage() {
   let result_jsons = await fetchAllVersions()
 
   // HTML div element
-  let container = document.getElementById('version-container');
+  let container = document.getElementById('versions');
   container.textContent = "";
 
   let version_elements_to_add = [];
@@ -31,6 +30,9 @@ async function fillPage() {
 
   // Fill
   for (let result of result_jsons) {
+    const new_div_container = document.createElement('div');
+    new_div_container.classList.add('container');
+
     const new_div = document.createElement('div');
     new_div.classList.add('generated');
 
@@ -321,8 +323,8 @@ async function fillPage() {
     }
 
 
-
-    version_elements_to_add.push(new_div);
+    new_div_container.appendChild(new_div);
+    version_elements_to_add.push(new_div_container);
   };
 
   // Start including from the old versions

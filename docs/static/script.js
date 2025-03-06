@@ -1,5 +1,3 @@
-
-
 // Function to build the table
 function buildTable(data) {
   const topHeaderRow = document.getElementById('topHeaderRow');
@@ -102,8 +100,7 @@ function buildTable(data) {
 }
 
 async function loadData(data){
-  return await (await fetch('/browser-permissions-tool/results/' + data)).json()
-  // return await (await fetch('/results/' + data)).json()
+  return await (await fetch(document.location.pathname.replace(/\/[^/]*$/, '/') + 'results/' + data)).json()
 }
 
 async function loadPage(){

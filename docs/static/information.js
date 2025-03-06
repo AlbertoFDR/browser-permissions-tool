@@ -1,5 +1,4 @@
-const RESULTS_URL = "/browser-permissions-tool/permissions.json";
-//const RESULTS_URL = "/permissions.json";
+const RESULTS_URL = document.location.pathname.replace(/\/[^/]*$/, '/') +  "permissions.json";
 
 async function getResultContent(){
   return await (await fetch(RESULTS_URL)).json()

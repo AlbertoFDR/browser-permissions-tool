@@ -28,54 +28,60 @@
     <h3 id="date">date</h3>
     </header>
     <div class="container">
-  <!-- Comments section -->
-  <div class="comments">
-    <p>Using the <a href="index.html">permission result list</a>, this page lets you create a permissions policy header for your website. In this list, all the policy-controlled permissions that are valid for at least one browser vendor. In this header, you can specify different directives for the policy-controlled permissions.</p>
-    <p class="important">Note: Even though you can use the 'Disable Powerful Permissions' option, I highly recommend double-checking manually.</p>
-    <p class="important">Inspired by <a href="https://permissionspolicy.com" target="_blank">permissionspolicy.com</a></p>
-  </div>
-  <!-- Generated Header section -->
-  <div class="generated">
-    <button id="copy-btn">📋 Copy</button>
-    <div class="generated-context">
-      <p>Example:</p>
-      <p>Nº of Permissions: 27</p>
-      <p>Nº of Bytes: 524</p>
+      <!-- Comments section -->
+      <div class="comments">
+        <p>Using the <a href="index.html">permission result list</a>, this page lets you create a permissions policy header for your website. In this list, all the policy-controlled permissions that are valid for at least one browser vendor. In this header, you can specify different directives for the policy-controlled permissions.</p>
+        <p class="important">Note: Even though you can use the 'Disable Powerful Permissions' option, I highly recommend double-checking manually.</p>
+        <p class="important">Inspired by <a href="https://permissionspolicy.com" target="_blank">permissionspolicy.com</a></p>
+      </div>
     </div>
-    <br>
-    <code id="permissions-policy">Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()</code>
-  </div>
+    <div class="container">
+      <!-- Generated Header section -->
+      <div class="generated">
+        <button id="copy-btn">📋 Copy</button>
+        <div class="generated-context">
+          <p>Example:</p>
+          <p>Nº of Permissions: 27</p>
+          <p>Nº of Bytes: 524</p>
+        </div>
+        <br>
+        <code id="permissions-policy">Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()</code>
+      </div>
 
-  <div id="all-buttons">
-    <button class="button" id="disable-all" onclick="disableAll()">Disable All Permissions</button>
-    <button class="button" id="disable-all-powerful" onclick="disableAllPowerful()">Disable Powerful Permissions</button>
-    <button class="button" id="start-again" onclick="startAgain()">Start Again</button>
-  </div>
+    </div>
+    <div class="container">
+      <div id="all-buttons">
+        <button class="button" id="disable-all" onclick="disableAll()">Disable All Permissions</button>
+        <button class="button" id="disable-all-powerful" onclick="disableAllPowerful()">Disable Powerful Permissions</button>
+        <button class="button" id="start-again" onclick="startAgain()">Start Again</button>
+      </div>
+    </div>
 
-  <!-- Table -->
-  <table>
-    <thead>
-      <tr id="topHeaderRow">
-        <th id="permission">Permission ▲▼</th>
-        <th id="powerful">Powerful ▲▼</th>
-        <th>Disable</th>
-        <th>Self</th>
-        <th>Origin</th>
-        <th>*</th>
-      </tr>
-    </thead>
-    <tbody id="tableBody"></tbody>
-  </table>
-  </div>
-    <table id="dataTable">
-      <thead>
-        <tr id="topHeaderRow"></tr>
-        <tr id="columnHeaderRow"></tr> 
-      </thead>
-      <tbody id="tableBody">
-      </tbody>
-    </table>
-  </div>
+    <div class="container">
+      <!-- Table -->
+      <table>
+        <thead>
+          <tr id="topHeaderRow">
+            <th id="permission">Permission ▲▼</th>
+            <th id="powerful">Powerful ▲▼</th>
+            <th>Disable</th>
+            <th>Self</th>
+            <th>Origin</th>
+            <th>*</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      </div>
+        <table id="dataTable">
+          <thead>
+            <tr id="topHeaderRow"></tr>
+            <tr id="columnHeaderRow"></tr> 
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+      </div>
   </div>
   <footer>
     <p>Project by <a href="https://github.com/albertofdr" target="_blank">bubu</a>.</p>

@@ -12,7 +12,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  overflow-x: auto; /* Add horizontal scroll if the content overflows */
+  margin-bottom: 20px;
 }
 
 .menu {
@@ -87,7 +87,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  margin-bottom: 20px;
   table-layout: fixed; /* Ensures columns are evenly distributed */
   border-collapse: collapse; /* Collapse borders between cells */
 }
@@ -130,7 +129,6 @@ tbody td {
 
 /* Styling for the comments container */
 .comments {
-  margin-bottom: 20px; /* Add spacing between comments and the table */
   padding: 15px; /* Add padding around the comments */
   background-color: #f7f9fc; /* Subtle background color */
   border-left: 4px solid #007BFF; /* Colored left border for emphasis */
@@ -154,8 +152,6 @@ tbody td {
 
 /* Styling for the generated header container */
 .generated {
-  margin-top: 20px; /* Add spacing above the header */
-  margin-bottom: 30px; /* Add spacing below the header for separation from following elements */
   padding: 15px; /* Add padding around the header */
   background-color: #f7f9fc; /* Subtle background color */
   border-left: 4px solid #28a745; /* Green left border for emphasis */
