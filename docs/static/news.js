@@ -2,17 +2,11 @@ const RESULTS_URL = "/browser-permissions-tool/results/";
 //const RESULTS_URL = "/results/";
 
 async function fetchAllVersions() {
-  // const RESULTS_GITHUB_API = "https://api.github.com/repositories/896178030/contents/docs/results";
   // Discarded because of Github Rate Limit
-  // try {
-  //   const response = await fetch(RESULTS_GITHUB_API);
-  //   const data = await response.json();
-  //   return data.reverse();
-  // } catch (error) {
-  //   console.error('Error fetching files:', error);
-  // }
+  // const RESULTS_GITHUB_API = "https://api.github.com/repositories/896178030/contents/docs/results";
 
   return [
+    "06-03-2025.json",
     "17-02-2025.json", 
     "08-02-2025.json", 
     "07-01-2025.json", 
