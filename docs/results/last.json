@@ -1,10 +1,10 @@
 {
-  "date": "06-03-2025",
-  "time": "8:40",
-  "chrome_version": "132.0.6834.110",
+  "date": "17-02-2025",
+  "time": "8:7",
+  "chrome_version": "133.0.6943.98",
   "chromium_version": "131.0.6778.33",
   "firefox_version": "132.0",
-  "brave_version": "1.74.48",
+  "brave_version": "1.75.178",
   "webkit_version": "18.2",
   "playwright_version": "1.49.1",
   "result": [
@@ -731,7 +731,7 @@
     {
       "rowHeader": "deferred-fetch-minimal",
       "col1": false,
-      "col2": false,
+      "col2": true,
       "col3": "",
       "col4": false,
       "col5": false,
@@ -739,7 +739,7 @@
       "col7": false,
       "col8": false,
       "col9": false,
-      "col10": false,
+      "col10": true,
       "col11": "",
       "col12": false,
       "col13": false
@@ -1411,7 +1411,7 @@
       "col7": false,
       "col8": false,
       "col9": false,
-      "col10": true,
+      "col10": false,
       "col11": "",
       "col12": false,
       "col13": false
@@ -1427,7 +1427,7 @@
       "col7": false,
       "col8": false,
       "col9": false,
-      "col10": true,
+      "col10": false,
       "col11": "",
       "col12": false,
       "col13": false
