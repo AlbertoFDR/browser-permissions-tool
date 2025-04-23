@@ -169,7 +169,7 @@ async function fillPage() {
                   }
                 }
                 if(old_permission_result.col6 !==permission.col6){
-                  changes_in_results[old_permission_result.rowHeader]['chromium'].push(`⚠️ Policy controlled from '${old_permission_result.col3}' to '${permission.col3}'`);
+                  changes_in_results[old_permission_result.rowHeader]['chromium'].push(`⚠️ Policy controlled from '${old_permission_result.col6}' to '${permission.col6}'`);
                 }
               }
 
@@ -224,7 +224,7 @@ async function fillPage() {
                   }
                 }
                 if(old_permission_result.col11 !==permission.col11){
-                  changes_in_results[old_permission_result.rowHeader]['brave-browser'].push(`⚠️ Policy controlled from '${old_permission_result.col3}' to '${permission.col3}'`);
+                  changes_in_results[old_permission_result.rowHeader]['brave-browser'].push(`⚠️ Policy controlled from '${old_permission_result.col11}' to '${permission.col11}'`);
                 }
               }
 
