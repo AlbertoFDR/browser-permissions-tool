@@ -169,7 +169,7 @@ async function fillPage() {
                   }
                 }
                 if(old_permission_result.col6 !==permission.col6){
-                  changes_in_results[old_permission_result.rowHeader]['chrome'].push(`⚠️ Policy controlled from '${old_permission_result.col3}' to '${permission.col3}'`);
+                  changes_in_results[old_permission_result.rowHeader]['chromium'].push(`⚠️ Policy controlled from '${old_permission_result.col3}' to '${permission.col3}'`);
                 }
               }
 
@@ -252,7 +252,7 @@ async function fillPage() {
 
                 // future col14?
                 // if(old_permission_result.col3 !==permission.col3){
-                //   changes_in_results[old_permission_result.rowHeader]['firefox'].push(`⚠️ Policy controlled from ${old_permission_result.col3} to ${permission.col3}`);
+                //   changes_in_results[old_permission_result.rowHeader]['webkit'].push(`⚠️ Policy controlled from ${old_permission_result.col3} to ${permission.col3}`);
                 // }
               }
             }
