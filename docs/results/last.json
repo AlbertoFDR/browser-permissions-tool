@@ -1193,22 +1193,6 @@
       "col13": false
     },
     {
-      "rowHeader": "manual-text",
-      "col1": false,
-      "col2": false,
-      "col3": "",
-      "col4": false,
-      "col5": false,
-      "col6": "",
-      "col7": false,
-      "col8": false,
-      "col9": false,
-      "col10": false,
-      "col11": "",
-      "col12": false,
-      "col13": false
-    },
-    {
       "rowHeader": "media-playback-while-not-visible",
       "col1": false,
       "col2": false,
