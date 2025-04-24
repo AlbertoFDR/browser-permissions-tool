@@ -3,8 +3,6 @@
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/common/permissions_policy/policy_helper_public.h
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/permissions/permission_descriptor.idl
 const PERMISSIONS = [
-    // https://groups.google.com/a/chromium.org/g/blink-dev/c/JISRS7BIAVw/m/oOZvWu7ADgAJ
-    "manual-text",
     // https://github.com/w3c/permissions/issues/461
     "audio",
     // https://github.com/WICG/file-system-access/issues/245
@@ -234,6 +232,7 @@ const PERMISSIONS = [
     "shared-autofill",
     // https://github.com/w3c/webappsec-permissions-policy/pull/560
     // https://github.com/explainers-by-googlers/safe-text-input/blob/main/manual-text.md
+    // https://groups.google.com/a/chromium.org/g/blink-dev/c/JISRS7BIAVw/m/oOZvWu7ADgAJ
     "manual-text",
     "autofill",
 
