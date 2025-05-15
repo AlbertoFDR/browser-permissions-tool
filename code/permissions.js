@@ -3,12 +3,20 @@
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/common/permissions_policy/policy_helper_public.h
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/permissions/permission_descriptor.idl
 const PERMISSIONS = [
+    // https://chromium.googlesource.com/chromium/src/+/52c3e93c6f4601cc7e3a152ad859d1e86fca7714%5E%21/#F0
+    // https://webmachinelearning.github.io/translation-api/#translator-permissions-policy
+    "translator",
+    "language-detector",
+    "rewriter",
+    "summarizer",
+    "writer",
+
+    // https://chromium.googlesource.com/chromium/src/+/b2b4f7f49a01c8bc40437fa4f11153faa7dfe1db%5E%21/#F3
+    "device-attributes",
     // https://github.com/w3c/permissions/issues/461
     "audio",
     // https://github.com/WICG/file-system-access/issues/245
     "file-system",
-    // https://webmachinelearning.github.io/translation-api/#translator-permissions-policy
-    "translator",
     // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#385
     "popins",
 
