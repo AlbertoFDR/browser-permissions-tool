@@ -574,10 +574,10 @@
     },
 
     "ch-device-memory": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -585,10 +585,10 @@
     },
 
     "ch-rtt": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -596,10 +596,10 @@
     },
 
     "ch-downlink": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -607,10 +607,10 @@
     },
 
     "ch-ect": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -618,10 +618,10 @@
     },
 
     "ch-prefers-color-scheme": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -629,10 +629,10 @@
     },
 
     "ch-prefers-reduced-motion": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -640,10 +640,10 @@
     },
 
     "ch-ua": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "*",
@@ -651,10 +651,10 @@
     },
 
     "ch-ua-arch": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -662,10 +662,10 @@
     },
 
     "ch-ua-bitness": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -673,10 +673,10 @@
     },
 
     "ch-ua-form-factors": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -684,10 +684,10 @@
     },
 
     "ch-ua-full-version": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -695,10 +695,10 @@
     },
 
     "ch-ua-full-version-list": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -706,10 +706,10 @@
     },
 
     "ch-ua-mobile": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "*",
@@ -717,10 +717,10 @@
     },
 
     "ch-ua-model": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -728,10 +728,10 @@
     },
 
     "ch-ua-platform": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "*",
@@ -739,10 +739,10 @@
     },
 
     "ch-ua-platform-version": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -750,10 +750,10 @@
     },
 
     "ch-ua-wow64": {
-        "standard": "User-Agent Client Hints",
-        "standard-link": "https://wicg.github.io/ua-client-hints/",
+        "standard": "Client Hints Infrastructure",
+        "standard-link": "https://wicg.github.io/client-hints-infrastructure/",
         "standard-status": "W3C CG Draft Report",
-        "standard-status-link": "https://wicg.github.io/ua-client-hints/",
+        "standard-status-link": "https://wicg.github.io/client-hints-infrastructure/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
@@ -1222,6 +1222,61 @@
         "comments": "<a href='https://github.com/WICG/web-printing'>Github Explainer.</a>"
     },
 
+    "language-detector": {
+        "standard": "Translator and Language Detector APIs",
+        "standard-link": "https://webmachinelearning.github.io/translation-api/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://webmachinelearning.github.io/translation-api/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "translator": {
+        "standard": "Translator and Language Detector APIs",
+        "standard-link": "https://webmachinelearning.github.io/translation-api/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://webmachinelearning.github.io/translation-api/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "rewriter": {
+        "standard": "Writing Assistance APIs",
+        "standard-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "summarizer": {
+        "standard": "Writing Assistance APIs",
+        "standard-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+
+    "writer": {
+        "standard": "Writing Assistance APIs",
+        "standard-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "standard-status": "W3C CG Draft Report",
+        "standard-status-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "powerful-by-standard": false,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": ""
+    },
+    
     "solana": {
         "standard": "",
         "standard-link": "",
