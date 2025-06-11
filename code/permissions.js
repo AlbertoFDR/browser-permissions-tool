@@ -3,10 +3,20 @@
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/common/permissions_policy/policy_helper_public.h
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/permissions/permission_descriptor.idl
 const PERMISSIONS = [
+    // https://chromium.googlesource.com/chromium/src/+/381704b9838c927ccfb44d4924c8f843155ea9e7%5E%21/#F0
+    "on-device-speech-recognition",
+    // https://chromium.googlesource.com/chromium/src/+/5f065bc19f1b70e3ce3e01757522c7840cab6d5e%5E%21/#F6
+    "record-ad-auction-events",
+
+    //https://github.com/explainers-by-googlers/local-network-access
+    // https://chromium.googlesource.com/chromium/src/+/c5f8f3d9e52c16a49b520c7f6e2e9a8a43f81c8e%5E%21/#F2
+    "local-network-access",
+
     // https://chromium.googlesource.com/chromium/src/+/52c3e93c6f4601cc7e3a152ad859d1e86fca7714%5E%21/#F0
     // https://webmachinelearning.github.io/translation-api/#translator-permissions-policy
     "translator",
     "language-detector",
+    "language-model",
     "rewriter",
     "summarizer",
     "writer",
