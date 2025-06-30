@@ -336,7 +336,8 @@ const PERMISSIONS = [
     // Brave only
     // https://github.com/brave/brave-core/blob/553ed06aae4af211e5607093851724980cbc664b/patches/third_party-blink-renderer-core-permissions_policy-permissions_policy_features.json5.patch
     "solana",
-    "ethereum"
+    "ethereum",
+    "cardano"
 ]
 
 /* EXPORTS */
