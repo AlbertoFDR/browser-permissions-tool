@@ -3,6 +3,8 @@
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/common/permissions_policy/policy_helper_public.h
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/permissions/permission_descriptor.idl
 const PERMISSIONS = [
+    // https://github.com/w3c/webappsec-permissions-policy/pull/571
+    "monetization",
     // https://chromium.googlesource.com/chromium/src/+/381704b9838c927ccfb44d4924c8f843155ea9e7%5E%21/#F0
     "on-device-speech-recognition",
     // https://chromium.googlesource.com/chromium/src/+/5f065bc19f1b70e3ce3e01757522c7840cab6d5e%5E%21/#F6
