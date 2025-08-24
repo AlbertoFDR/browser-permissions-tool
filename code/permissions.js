@@ -134,6 +134,7 @@ const PERMISSIONS = [
     // Digital Credentials
     // https://wicg.github.io/digital-credentials/
     "digital-credentials-get",
+    "digital-credentials-create",
 
     // Federated Credential Management API
     // https://fedidcg.github.io/FedCM/

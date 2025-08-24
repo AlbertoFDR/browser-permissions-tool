@@ -69,7 +69,10 @@ async function webkit_crawler(permission){
 
   await page.goto(URL_FOR_TESTING, { timeout: 60000 });
   // other actions...
-  powerful_feature = await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => {return true;}).catch((error)=>{return false});`);
+  powerful_feature = await Promise.race([ 
+    page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => {return true;}).catch((error)=>{return false});`),
+    sleep(5000).then(()=>false)
+  ]);
   await browser.close();
   return [powerful_feature, policy_controlled];
 }
@@ -90,9 +93,11 @@ async function firefox_crawler(permission){
   // });
 
   await page.goto(URL_FOR_TESTING, {timeout: 60000});
-  powerful_feature = await page.evaluate(`
-    navigator.permissions.query({ name: "${permission}" }).then((result) => { return true; }).catch( (error)=>{ if(error.message.includes("is not a valid value")) { return false; } else {return true; } });
-  `);
+  powerful_feature = await Promise.race([ 
+    await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => { return true; }).catch( (error)=>{ if(error.message.includes("is not a valid value")) { return false; } else {return true; } });`),
+    sleep(5000).then(()=>{false})
+  ]);
+
   await browser.close();
   return [powerful_feature, policy_controlled];
 }
@@ -198,9 +203,10 @@ async function chromium_crawler(browser_type, permission){
   // asking for push gives this error:
   // Uncaught (in promise) NotSupportedError: Failed to execute 'query' on 'Permissions': Push Permission without userVisibleOnly:true isn't supported yet.
   // So, there are specific cases
-  powerful_feature = await page.evaluate(`
-    navigator.permissions.query({ name: "${permission}" }).then((result) => { return true; }).catch( (error)=>{ if(error.message.includes("is not a valid enum value")) { return false; } else {return true; } });
-  `);
+  powerful_feature =  await Promise.race([
+    await page.evaluate(`navigator.permissions.query({ name: "${permission}" }).then((result) => { return true; }).catch( (error)=>{ if(error.message.includes("is not a valid enum value")) { return false; } else {return true; } });`),
+    sleep(5000).then(()=>{false})
+  ]);
 
   // default_policy 
   let default_policy_check_works = await page.evaluate(`document.featurePolicy.allowsFeature('${permission}')`);
@@ -218,7 +224,6 @@ async function chromium_crawler(browser_type, permission){
 
 async function test(){
   const start = Date.now(); 
-  const date = getCurrentDate();
   const results = {
     "date": getCurrentDate(),
     "time": "",
