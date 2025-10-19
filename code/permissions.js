@@ -229,6 +229,7 @@ const PERMISSIONS = [
     "direct-sockets",
     // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#271 
     "direct-sockets-private",
+    "direct-sockets-multicast",
 
     // Page Lifecycle
     // Not very updated
