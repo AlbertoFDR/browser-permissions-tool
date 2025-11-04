@@ -221,6 +221,7 @@ const PERMISSIONS = [
     "ch-ua-platform-version",
     "ch-ua-wow64",
     "ch-ua-high-entropy-values",
+    "ch-prefers-reduced-transparency",
 
     // Direct Sockets
     // Just Google 'standard'
@@ -293,6 +294,7 @@ const PERMISSIONS = [
     // https://wicg.github.io/turtledove/#permissions-policy-integration
     "join-ad-interest-group",
     "run-ad-auction",
+    "interest-cohort",
 
     // Smart Card
     // https://wicg.github.io/web-smart-card/#permissions-policy

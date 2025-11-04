@@ -3,7 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 const { chromium, firefox, webkit } = require('playwright');
 const { PERMISSIONS } = require('./permissions.js');
-const { sleep, getCurrentDate, saveResults } = require('./utils.js');
+const { sleep, getCurrentDate, saveResults, newPermissionsChecker } = require('./utils.js');
 
 // Config
 const CHROME_TEST = true;
@@ -244,6 +244,11 @@ async function test(){
   results["brave_version"] = versions[3]
   results["webkit_version"] = versions[4]
   results["playwright_version"] = versions[5]
+
+  if(await newPermissionsChecker()){
+    console.log("[ERROR] Add the missing permissions to 'permissions.js'.")
+    process.exit();
+  }
 
   console.log(`================== ANALYZING ${PERMISSIONS.length} PERMISSIONS`);
   for (const permission of PERMISSIONS.sort()){

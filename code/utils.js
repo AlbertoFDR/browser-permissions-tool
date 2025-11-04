@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { PERMISSIONS } = require('./permissions.js');
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -39,7 +40,37 @@ function saveResults(json){
 };
 
 
+async function newPermissionsChecker(){
+  /* Chromium Features */
+  let chromiumURL = "https://chromium.googlesource.com/chromium/src/+/main/services/network/public/cpp/permissions_policy/permissions_policy_features.json5?format=TEXT";
+  let response = await fetch(chromiumURL);
+  let base64 = await response.text();
+  let decoded = Buffer.from(base64, 'base64').toString('utf-8');
+  let chromiumFeatures = [...decoded.matchAll(/permissions_policy_name:\s*"(.*?)",/g)].map(m => m[1]);
+  let missing = chromiumFeatures.filter(permission => !PERMISSIONS.includes(permission));
+  if (missing.length > 0){
+    console.log(`[ERROR] Permissions supported by Chromium not included in the list.`);
+    for(permission of missing){
+      console.log(`- ${permission}`);
+    }
+    return true;
+  }
 
-exports.getCurrentDate = getCurrentDate;
-exports.saveResults = saveResults;
+  // Still not relevant
+  // Firefox
+  // https://github.com/mozilla-firefox/firefox/blob/main/extensions/permissions/PermissionDelegateHandler.cpp#L46
+  // https://searchfox.org/firefox-main/source/dom/security/featurepolicy/FeaturePolicyUtils.cpp
+  
+  // WebKit
+  // https://github.com/WebKit/WebKit/blob/49085ab3d17ccd8dad11b77d37de8bf055a75115/Source/WebCore/Modules/permissions/PermissionName.idl#L29
+
+
+  return false;
+}
+
+
+
 exports.sleep = sleep;
+exports.saveResults = saveResults;
+exports.getCurrentDate = getCurrentDate;
+exports.newPermissionsChecker = newPermissionsChecker;
