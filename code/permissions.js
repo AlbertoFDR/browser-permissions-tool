@@ -13,8 +13,12 @@ const PERMISSIONS = [
     "record-ad-auction-events",
 
     //https://github.com/explainers-by-googlers/local-network-access
+    // this one defines "private-network-access" but maybe it changes the name
     // https://chromium.googlesource.com/chromium/src/+/c5f8f3d9e52c16a49b520c7f6e2e9a8a43f81c8e%5E%21/#F2
     "local-network-access",
+    
+    "local-network",
+    "loopback-network",
 
     // https://chromium.googlesource.com/chromium/src/+/52c3e93c6f4601cc7e3a152ad859d1e86fca7714%5E%21/#F0
     // https://webmachinelearning.github.io/translation-api/#translator-permissions-policy
