@@ -5,22 +5,12 @@ async function fetchAllVersions() {
   // const RESULTS_GITHUB_API = "https://api.github.com/repositories/896178030/contents/docs/results";
 
   return [
-    "22-12-2025.json",
-    "04-11-2025.json",
-    "19-10-2025.json", 
-    "24-08-2025.json", 
-    "10-07-2025.json", 
-    "02-07-2025.json", 
-    "30-06-2025.json", 
-    "11-06-2025.json", 
-    "15-05-2025.json", 
-    "23-04-2025.json", 
-    "09-04-2025.json", 
-    "12-03-2025.json", 
-    "17-02-2025.json", 
-    "08-02-2025.json", 
-    "07-01-2025.json", 
-    "20-12-2024.json"
+    "28-01-2026.json", "22-12-2025.json",
+    "04-11-2025.json", "19-10-2025.json", "24-08-2025.json", 
+    "10-07-2025.json", "02-07-2025.json", "30-06-2025.json", 
+    "11-06-2025.json", "15-05-2025.json", "23-04-2025.json", 
+    "09-04-2025.json", "12-03-2025.json", "17-02-2025.json", 
+    "08-02-2025.json", "07-01-2025.json", "20-12-2024.json"
   ].reverse();
 }
 
