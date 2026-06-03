@@ -1,12 +1,12 @@
 {
-  "date": "06-05-2026",
-  "time": "11:25",
-  "chrome_version": "148.0.7778.96",
-  "chromium_version": "147.0.7727.15",
-  "firefox_version": "148.0.2",
-  "brave_version": "1.89.145",
+  "date": "03-06-2026",
+  "time": "11:38",
+  "chrome_version": "148.0.7778.215",
+  "chromium_version": "148.0.7778.96",
+  "firefox_version": "150.0.2",
+  "brave_version": "1.90.124",
   "webkit_version": "26.4",
-  "playwright_version": "1.59.1",
+  "playwright_version": "1.60.0",
   "result": [
     {
       "rowHeader": "accelerometer",
@@ -1279,11 +1279,11 @@
       "col3": "self",
       "col4": false,
       "col5": true,
-      "col6": "",
+      "col6": "self",
       "col7": false,
       "col8": false,
       "col9": false,
-      "col10": true,
+      "col10": false,
       "col11": "",
       "col12": false,
       "col13": false
