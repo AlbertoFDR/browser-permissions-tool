@@ -52,7 +52,7 @@
         "standard-link": "https://wicg.github.io/attribution-reporting-api/",
         "standard-status": "W3C CG Draft Report",
         "standard-status-link": "https://wicg.github.io/attribution-reporting-api/",
-        "comments": ""
+        "comments": "Removed in Chromium [Commit: 7ca92df16db1e31f52c2780bdb3005e9bb861312]. "
     },
 
     "conversion-measurement": {
@@ -790,7 +790,7 @@
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "none",
-        "comments": "Private Network Access."
+        "comments": "Private Network Access. Removed in Chrome [Commit: f1b445b81bac2adf82ec6ba55c53bfa9eecd72a3]."
     },
 
     "execution-while-not-rendered": {
@@ -1268,13 +1268,24 @@
 
     "writer": {
         "standard": "Writing Assistance APIs",
-        "standard-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
+        "standard-link": "https://www.w3.org/TR/webnn/",
         "standard-status": "W3C CG Draft Report",
         "standard-status-link": "https://webmachinelearning.github.io/writing-assistance-apis/",
         "powerful-by-standard": false,
         "permissions-policy-by-standard": true,
         "default-allowlist-by-standard": "self",
         "comments": ""
+    },
+
+    "WebNN": {
+        "standard": "Writing Assistance APIs",
+        "standard-link": "https://www.w3.org/TR/webnn/",
+        "standard-status": "Candidate Recommendation Draft",
+        "standard-status-link": "https://www.w3.org/TR/webnn/",
+        "powerful-by-standard": true,
+        "permissions-policy-by-standard": true,
+        "default-allowlist-by-standard": "self",
+        "comments": "Added in Chrome [Commit: 5d78bcdec9f280ae30f664d315364809691e88ec]."
     },
     
     "solana": {
