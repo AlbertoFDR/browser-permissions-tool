@@ -1,12 +1,12 @@
 {
-  "date": "30-07-2026",
-  "time": "15:8",
-  "chrome_version": "150.0.7871.186",
+  "date": "31-08-2026",
+  "time": "11:42",
+  "chrome_version": "152.0.7977.64",
   "chromium_version": "151.0.7922.34",
   "firefox_version": "153.0",
-  "brave_version": "1.92.144",
+  "brave_version": "1.93.138",
   "webkit_version": "26.5",
-  "playwright_version": "1.62.0",
+  "playwright_version": "1.62.1",
   "result": [
     {
       "rowHeader": "accelerometer",
@@ -91,8 +91,8 @@
     {
       "rowHeader": "attribution-reporting",
       "col1": false,
-      "col2": true,
-      "col3": "*",
+      "col2": false,
+      "col3": "",
       "col4": false,
       "col5": true,
       "col6": "*",
@@ -1141,6 +1141,22 @@
       "col9": true,
       "col10": true,
       "col11": "self",
+      "col12": false,
+      "col13": false
+    },
+    {
+      "rowHeader": "haptics",
+      "col1": false,
+      "col2": false,
+      "col3": "",
+      "col4": false,
+      "col5": false,
+      "col6": "",
+      "col7": false,
+      "col8": false,
+      "col9": false,
+      "col10": false,
+      "col11": "",
       "col12": false,
       "col13": false
     },

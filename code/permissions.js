@@ -3,6 +3,8 @@
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/common/permissions_policy/policy_helper_public.h
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/permissions/permission_descriptor.idl
 const PERMISSIONS = [
+	// https://chromium.googlesource.com/chromium/src/+/main/services/network/public/cpp/permissions_policy/permissions_policy_features.json5#375
+	"haptics",
 	// https://chromium.googlesource.com/chromium/src/+/main/services/network/public/cpp/permissions_policy/permissions_policy_features.json5#637
 	"webnn",
 	// https://chromium.googlesource.com/chromium/src/+/main/services/network/public/cpp/permissions_policy/permissions_policy_features.json5#638
@@ -197,6 +199,7 @@ const PERMISSIONS = [
     // https://wicg.github.io/attribution-reporting-api/#network-monkeypatches
     // Includes also headers
     "conversion-measurement",
+	// Removed https://chromium.googlesource.com/chromium/src/+/7ca92df16db1e31f52c2780bdb3005e9bb861312%5E%21/#F4
     "attribution-reporting",
 
     // https://html.spec.whatwg.org/multipage/infrastructure.html#policy-controlled-features
@@ -237,6 +240,7 @@ const PERMISSIONS = [
     // https://wicg.github.io/direct-sockets/
     "direct-sockets",
     // https://chromium.googlesource.com/chromium/src/+/a9687aa013c07e969063c79ef4106a910c380f1e/third_party/blink/renderer/core/permissions_policy/permissions_policy_features.json5#271 
+	// Removed from chromium this
     "direct-sockets-private",
     "direct-sockets-multicast",
 
