@@ -3,6 +3,8 @@
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/common/permissions_policy/policy_helper_public.h
 // https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/permissions/permission_descriptor.idl
 const PERMISSIONS = [
+	"unbounded-element",
+	"publickey-credentials-remote-client-data-json",
 	// https://chromium.googlesource.com/chromium/src/+/main/services/network/public/cpp/permissions_policy/permissions_policy_features.json5#375
 	"haptics",
 	// https://chromium.googlesource.com/chromium/src/+/main/services/network/public/cpp/permissions_policy/permissions_policy_features.json5#637

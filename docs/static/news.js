@@ -5,7 +5,7 @@ async function fetchAllVersions() {
   // const RESULTS_GITHUB_API = "https://api.github.com/repositories/896178030/contents/docs/results";
 
   return [
-	"23-09-2026.json", "31-08-2026.json",
+	"26-10-2026.json", "23-09-2026.json", "31-08-2026.json",
 	"30-07-2026.json", "16-06-2026.json", "03-06-2026.json",
 	"06-05-2026.json", "07-04-2026.json", "24-03-2026.json",
     "23-02-2026.json", "28-01-2026.json", "22-12-2025.json",
